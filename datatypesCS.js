@@ -56,6 +56,7 @@ let v6 = new RegExp(/()/)                           // A new RegExp object
 let v7 = new Function('a', 'b', 'return a + b')     // A new Function object. Rarely used. Generally considered bad practice.
 let v8 = new Date('December 17, 1995 13:24:00')     // A new Date object
 let v8alt = new Date(1995, 11, 17, 13, 24, 0)       // Date(year, monthIndex, day, hours, minutes, seconds, milliseconds)
+let v9 = new Promise( (resolve, reject) => {})      // A new promise, returning resolution or rejection of the promise.
 */
 
 
