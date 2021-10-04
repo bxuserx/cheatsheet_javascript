@@ -39,15 +39,15 @@ const person = {
   ]
 };
 
-// When setting an object to a new object 'y', modifying the new object 'y' will modify the existing object 'person'
-const y = person;
+const y = person;                   // When setting an object to a new object 'y', modifying the new object 'y' will modify the existing object 'person'
 y.age = 10;
 //console.log("This person's age is now " + person.age + " and not 50")
-
 person.nationality = "English";     // Adding a property
 person.bike.bike4 = "Specalized";   // Adding a nested property
 delete person.eyeColor;             // Deleting a property
 
+
+// Accessing embedded properties inside an object. 
 objectDemoString = 'Accessing embedded properties within an object:'
 document.getElementById("objectDemoStart").innerHTML = objectDemoString
 let insideObject = "";
@@ -88,6 +88,7 @@ let item_type = typeof(itemObj);                        // Typeof
 let item_len  = itemObj.length;                         // Length of vector
 let item_one  = itemObj[1];                             // Array/Object index Starts at 0
 let item_oneName  = itemObj[1].name;                    // Accessing properties of the object
+let item_array  = itemObj.map( x => x.name);            // Create array from one column
 let item_addS  = itemObj.map( x => x.name + `_bought`); // Add string appended to name column
 let item_addN = itemObj.map( x => x.price + 2);         // Add number to every element price
 let item_find = itemObj.find( x => x.name === `Mug`);   // value in the array === Mug. Finds last if multiple
